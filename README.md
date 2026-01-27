@@ -1,51 +1,124 @@
+# Swim Dojo Workout Generator 🏊
 
-# swim_dojo_generator
+Generate random swim workouts from [SwimDojo.com](https://www.swimdojo.com) with an easy-to-use graphical interface!
 
-This tool lets you easily open a random swim workout from [swimdojo.com](https://www.swimdojo.com) using a simple Windows-friendly interface. No coding or terminal knowledge required! (Or at least i tried to, first time working with windows)
+Based on the concept from: https://www.reddit.com/r/Swimming/comments/1dtzus8/i_made_a_script_that_opens_a_random_swim_workout/
 
+## Features
 
-## How to Use (Windows)
+- 🎯 Simple graphical user interface (GUI)
+- 🏷️ Filter workouts by tags (sprint, endurance, technique, etc.)
+- 🎲 Random workout selection
+- 🌐 Opens workouts directly in your browser
+- 💻 Easy Windows installation - no coding required!
 
-### Option 1: Easiest (No Python Needed)
+## Quick Start (Windows Users)
 
-1. **Build the Windows Executable**
-		- If you downloaded this as source code, run `build_exe_win.bat` (double-click it) to create a standalone `SwimDojoGenerator.exe` in the `dist` folder. (Requires Python on your system for the build step.)
-		- If you already have `SwimDojoGenerator.exe`, skip to step 2.
+### For Users Who Don't Know How to Code:
 
-2. **Run the Installer**
-		- Double-click `install_win.bat`.
-		- This will check for Python, install it if needed, install dependencies, and launch the app.
-		- If the executable exists, it will run; otherwise, it will run the GUI directly.
+1. **Install Python** (if not already installed):
+   - Download from: https://www.python.org/downloads/
+   - **IMPORTANT**: During installation, check the box "Add Python to PATH"
+   - Click "Install Now"
 
-### Option 2: Manual (Python Required)
+2. **Download this repository**:
+   - Click the green "Code" button at the top of this page
+   - Select "Download ZIP"
+   - Extract the ZIP file to a folder on your computer
 
-1. **Install Python**
-		- Download and install Python 3.8 or newer from [python.org](https://www.python.org/downloads/).
-		- During installation, make sure to check "Add Python to PATH".
+3. **Run the application** (choose one method):
+   - **Method 1 (Recommended)**: Double-click `run_workout_generator.bat`
+   - **Method 2**: Double-click `run_workout_generator.ps1` (PowerShell version)
+   - **Method 3**: Double-click `launcher.py` (Python script)
+   - That's it! The app will automatically install dependencies and launch
 
-2. **Install Requirements**
-		- Open a command prompt in this folder and run:
-			```
-			pip install -r requirements.txt
-			```
+💡 **Not sure which to use?** Just try Method 1 first!
 
-3. **Run the User Interface**
-		- Double-click `gui.py` (or right-click and choose "Open with → Python").
-		- Or run in a command prompt:
-			```
-			python gui.py
-			```
-		- A window will appear. Select any tags you want (or leave blank for a fully random workout) and click **Get Random Workout**.
-		- Your browser will open a random workout from swimdojo.com.
+### Optional: Create Desktop Shortcut
 
+For even easier access, you can create a desktop shortcut:
+- Double-click `create_desktop_shortcut.bat`
+- A shortcut will appear on your Desktop
+- Use the shortcut to launch the app anytime!
+
+### Alternative Launchers
+
+- **Batch file** (`run_workout_generator.bat`): Standard Windows launcher
+- **PowerShell** (`run_workout_generator.ps1`): For users who prefer PowerShell
+- **Python launcher** (`launcher.py`): Cross-platform option
+- **Manual setup**: Run `setup.bat` once, then use any launcher
+
+## Usage
+
+1. Launch the application using `run_workout_generator.bat`
+2. (Optional) Select a specific workout type from the dropdown
+3. Click "Get Random Workout!" 
+4. A random workout will open in your default web browser
+5. Enjoy your swim training!
+
+## Files Included
+
+### Launcher Scripts (Pick one to run the app)
+- `run_workout_generator.bat` - Windows batch file launcher (Recommended)
+- `run_workout_generator.ps1` - PowerShell launcher
+- `launcher.py` - Cross-platform Python launcher
+- `setup.bat` - First-time setup script (optional)
+- `create_desktop_shortcut.bat` - Creates a desktop shortcut (Windows only)
+
+### Application Files
+- `swim_workout_fetcher.py` - Core script to fetch workouts from SwimDojo.com
+- `swim_workout_gui.py` - Graphical user interface
+- `requirements.txt` - Python package dependencies
+
+### Documentation
+- `README.md` - This file (full documentation)
+- `QUICKSTART.md` - Step-by-step beginner's guide
+- `LICENSE` - MIT License
+
+## Requirements
+
+- Python 3.7 or higher
+- Internet connection
+- Dependencies (automatically installed):
+  - requests
+  - beautifulsoup4
+
+## For Developers
+
+### Running from Command Line
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the GUI
+python swim_workout_gui.py
+
+# Or run the command-line version
+python swim_workout_fetcher.py
+```
+
+### Running Tests
+
+```bash
+# Test the core fetcher
+python swim_workout_fetcher.py
+```
 
 ## Troubleshooting
 
-- If double-clicking `install_win.bat` or `gui.py` doesn't work, open a command prompt in this folder and run:
-	```
-	python gui.py
-	```
-- If you get errors about missing modules, repeat the install steps above.
+**Problem**: "Python is not recognized..."
+- **Solution**: Python is not installed or not in PATH. Reinstall Python and check "Add Python to PATH"
 
-## About
-Generates a random workout based on the swimdojo website, working with tags. Based on the code of https://www.reddit.com/r/Swimming/comments/1dtzus8/i_made_a_script_that_opens_a_random_swim_workout/
+**Problem**: Application won't start
+- **Solution**: Try running `setup.bat` first, then `run_workout_generator.bat`
+
+**Problem**: No workouts found
+- **Solution**: Check your internet connection and try again
+
+**Problem**: Dependencies won't install
+- **Solution**: Make sure you have an internet connection. Try running: `python -m pip install --upgrade pip` first
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
