@@ -26,17 +26,20 @@ Based on the concept from: https://www.reddit.com/r/Swimming/comments/1dtzus8/i_
    - Select "Download ZIP"
    - Extract the ZIP file to a folder on your computer
 
-3. **Run the application**:
-   - Double-click `run_workout_generator.bat`
+3. **Run the application** (choose one method):
+   - **Method 1 (Recommended)**: Double-click `run_workout_generator.bat`
+   - **Method 2**: Double-click `run_workout_generator.ps1` (PowerShell version)
+   - **Method 3**: Double-click `launcher.py` (Python script)
    - That's it! The app will automatically install dependencies and launch
 
-### Alternative: Manual Setup
+💡 **Not sure which to use?** Just try Method 1 first!
 
-If you prefer to set up manually:
+### Alternative Launchers
 
-1. Open Command Prompt in the project folder
-2. Run: `setup.bat`
-3. Then run: `run_workout_generator.bat`
+- **Batch file** (`run_workout_generator.bat`): Standard Windows launcher
+- **PowerShell** (`run_workout_generator.ps1`): For users who prefer PowerShell
+- **Python launcher** (`launcher.py`): Cross-platform option
+- **Manual setup**: Run `setup.bat` once, then use any launcher
 
 ## Usage
 
@@ -48,11 +51,21 @@ If you prefer to set up manually:
 
 ## Files Included
 
+### Launcher Scripts (Pick one to run the app)
+- `run_workout_generator.bat` - Windows batch file launcher (Recommended)
+- `run_workout_generator.ps1` - PowerShell launcher
+- `launcher.py` - Cross-platform Python launcher
+- `setup.bat` - First-time setup script (optional)
+
+### Application Files
 - `swim_workout_fetcher.py` - Core script to fetch workouts from SwimDojo.com
 - `swim_workout_gui.py` - Graphical user interface
-- `run_workout_generator.bat` - Easy launcher for Windows (auto-installs dependencies)
-- `setup.bat` - First-time setup script
 - `requirements.txt` - Python package dependencies
+
+### Documentation
+- `README.md` - This file (full documentation)
+- `QUICKSTART.md` - Step-by-step beginner's guide
+- `LICENSE` - MIT License
 
 ## Requirements
 
