@@ -37,6 +37,15 @@ This guide will help you get started in just a few minutes!
 3. A workout page will open in your web browser
 4. Enjoy your swim training!
 
+## Bonus: Create a Desktop Shortcut
+
+Want even easier access? Create a desktop shortcut:
+
+1. In the extracted folder, double-click `create_desktop_shortcut.bat`
+2. Click "Yes" if asked for permission
+3. A new shortcut "Swim Workout Generator" will appear on your Desktop
+4. From now on, just double-click the desktop icon to launch the app!
+
 ## Troubleshooting
 
 ### "Python is not recognized..."

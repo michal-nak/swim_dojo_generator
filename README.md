@@ -34,6 +34,13 @@ Based on the concept from: https://www.reddit.com/r/Swimming/comments/1dtzus8/i_
 
 💡 **Not sure which to use?** Just try Method 1 first!
 
+### Optional: Create Desktop Shortcut
+
+For even easier access, you can create a desktop shortcut:
+- Double-click `create_desktop_shortcut.bat`
+- A shortcut will appear on your Desktop
+- Use the shortcut to launch the app anytime!
+
 ### Alternative Launchers
 
 - **Batch file** (`run_workout_generator.bat`): Standard Windows launcher
@@ -56,6 +63,7 @@ Based on the concept from: https://www.reddit.com/r/Swimming/comments/1dtzus8/i_
 - `run_workout_generator.ps1` - PowerShell launcher
 - `launcher.py` - Cross-platform Python launcher
 - `setup.bat` - First-time setup script (optional)
+- `create_desktop_shortcut.bat` - Creates a desktop shortcut (Windows only)
 
 ### Application Files
 - `swim_workout_fetcher.py` - Core script to fetch workouts from SwimDojo.com
